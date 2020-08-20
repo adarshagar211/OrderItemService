@@ -33,7 +33,7 @@ class OrderItemApplicationTests {
 
 	@Test
 	public void test1() {
-		ResponseEntity<OrderItem> re = orderItemServiceClient.retriveOrderItem(2);
+		ResponseEntity<OrderItem> re = orderItemServiceClient.retriveOrderItem(1);
 		Assert.notNull(re.getBody());
 	}
 

@@ -5,7 +5,7 @@ public class OrderItemNotFoundException extends RuntimeException {
 	private static final long serialVersionUID = -3018713382753926456L;
 
 	public OrderItemNotFoundException() {
-		super();
+		this("OrderItem does not exist in database");
 	}
 
 	public OrderItemNotFoundException(String message, Throwable cause) {
